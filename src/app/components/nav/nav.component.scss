@@ -1,0 +1,24 @@
+.nav {
+  background-color: royalblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: .5rem;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    height: auto;
+    width: 35px;
+    margin: 0 1rem;
+  }
+
+  &__link {
+    color: #fff;
+    padding: .5rem;
+  }
+}
