@@ -1,13 +1,16 @@
 .dashboard {
-  &__heading {
-    max-width: 1440px;
-    margin: 2rem auto;
-  }
+
+&__text-container{
+  max-width: 1440px;
+  margin: 2rem auto;
+}
 
   &__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1440px;
+    margin: auto;
   }
 
   &__input {

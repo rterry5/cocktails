@@ -1,8 +1,6 @@
 import { Drink } from './../../domain/drink';
 import { Component, Input, OnInit, Inject } from '@angular/core';
-import { ActivatedRoute, Params, Router, RouterEvent, Data } from '@angular/router';
-import {MAT_DIALOG_DATA, MatDialog, MatDialogConfig, MatDialogRef} from '@angular/material/dialog';
-import { CocktailService } from 'src/app/services/cocktail.service';
+import {MAT_DIALOG_DATA, MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-drink-details',

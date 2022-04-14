@@ -5,12 +5,14 @@
         <input type="search" name="search" autocomplete="off" class="dashboard__input" placeholder="Search A Spirit" [(ngModel)]="searchQuery" (keyup)="getCocktails()">
       </form>
     </div>
-    <h1 class="dashboard__title">Cocktail Search</h1>
-    <p class="dashboard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </p>
+    <div class="dashboard__text-container">
+      <h1 class="dashboard__title">Cocktail Search</h1>
+      <p class="dashboard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
   </div>
   <app-card [drinks]="cocktails" class="dashboard__cards"></app-card>
 </div>
