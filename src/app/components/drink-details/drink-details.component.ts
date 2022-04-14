@@ -1,7 +1,8 @@
 import { Drink } from './../../domain/drink';
 import { Component, Input, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Params, Router, RouterEvent, Data } from '@angular/router';
-import {MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MAT_DIALOG_DATA, MatDialog, MatDialogConfig, MatDialogRef} from '@angular/material/dialog';
+import { CocktailService } from 'src/app/services/cocktail.service';
 
 @Component({
   selector: 'app-drink-details',
@@ -11,16 +12,14 @@ import {MAT_DIALOG_DATA} from '@angular/material/dialog';
 export class DrinkDetailsComponent implements OnInit {
 
   @Input()
-  drinks: any;
-  cocktailService: any;
+  drinks: Drink;
 
-  constructor(private route: ActivatedRoute,
-    @Inject(MAT_DIALOG_DATA) public data: any) { }
+  constructor(
+    public dialog: MatDialog,
+    @Inject(MAT_DIALOG_DATA) public data: any) {
+    }
 
   ngOnInit(): void {
-    this.route.data.subscribe((response: any) => {
-      console.log(this.data)
-    })
   }
 
 }

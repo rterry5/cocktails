@@ -8,23 +8,7 @@ const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
-    // children:[
-    //   {
-    //     path: ':id',
-    //     component: DrinkDetailsComponent,
-    //     resolve: {
-    //       drinks: DrinksResolverService
-    //     }
-    //   }
-    // ]
   },
-  {
-    path: '**',
-    component: DrinkDetailsComponent,
-    resolve: {
-      drinks: DrinksResolverService
-    }
-  }
 ];
 
 @NgModule({
