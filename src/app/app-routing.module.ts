@@ -2,15 +2,24 @@ import { DrinkDetailsComponent } from './components/drink-details/drink-details.
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DrinksResolverService } from './routing/drinks-resolver.service';
+import { DrinksResolverService } from './services/drinks-resolver.service';
 
 const routes: Routes = [
   {
     path: '',
-    component: DashboardComponent
+    component: DashboardComponent,
+    // children:[
+    //   {
+    //     path: ':id',
+    //     component: DrinkDetailsComponent,
+    //     resolve: {
+    //       drinks: DrinksResolverService
+    //     }
+    //   }
+    // ]
   },
   {
-    path: 'recipe/:id',
+    path: '**',
     component: DrinkDetailsComponent,
     resolve: {
       drinks: DrinksResolverService

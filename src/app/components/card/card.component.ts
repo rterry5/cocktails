@@ -1,5 +1,7 @@
 import { Drink } from './../../domain/drink';
 import { Component, OnInit, Input } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { DrinkDetailsComponent } from '../drink-details/drink-details.component';
 
 @Component({
   selector: 'app-card',
@@ -14,9 +16,16 @@ export class CardComponent implements OnInit {
   @Input()
   drinks: Drink[];
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  openDialog() {
+    this.dialog.open(DrinkDetailsComponent, {
+    data: this.drinks
+
+    });
+
+  }
 }

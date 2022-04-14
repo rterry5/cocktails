@@ -1,4 +1,13 @@
-<a href="recipe/{{drink.idDrink}}" class="card" *ngFor="let drink of drinks">
+<!-- <a href="recipe/{{drink.idDrink}}" class="card" *ngFor="let drink of drinks">
+  <div class="card__cocktail">
+    <h3 class="card__name">{{drink.strDrink}}</h3>
+    <div class="card__img-container">
+      <img src="{{drink.strDrinkThumb}}" alt="">
+    </div>
+    <p class="card__text"></p>
+  </div>
+</a> -->
+<a (click)="openDialog()" class="card" *ngFor="let drink of drinks">
   <div class="card__cocktail">
     <h3 class="card__name">{{drink.strDrink}}</h3>
     <div class="card__img-container">

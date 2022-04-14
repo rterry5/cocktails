@@ -1,4 +1,4 @@
-<div class="drink-details" *ngFor="let drinks of drinks">
+<div mat-dialog-content class="drink-details" *ngFor="let drinks of drinks">
   <img src="{{drinks.strDrinkThumb}}" alt="" class="drink-details__image">
   <div class="drink-details__recipe">
     <h1 class="drink-details__text">{{drinks.strDrink}} ({{drinks.strAlcoholic}})</h1>
@@ -23,3 +23,5 @@
     <p class="drink-details__text">{{drinks.strInstructions}}</p>
   </div>
 </div>
+
+

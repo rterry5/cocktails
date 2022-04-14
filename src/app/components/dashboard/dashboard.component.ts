@@ -12,8 +12,7 @@ export class DashboardComponent implements OnInit {
   @Input()
   cocktails: Drink[];
 
-  @Input()
-  searchQuery: any;
+  searchQuery: string;
 
   constructor(private cocktailHttp: CocktailService) { }
 

@@ -10,6 +10,8 @@ import { NavComponent } from './components/nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './components/card/card.component';
 import { DrinkDetailsComponent } from './components/drink-details/drink-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { DrinkDetailsComponent } from './components/drink-details/drink-details.
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    SimpleModalModule
+    SimpleModalModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

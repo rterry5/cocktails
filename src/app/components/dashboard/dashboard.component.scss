@@ -1,8 +1,7 @@
 .dashboard {
-  max-width: 1440px;
-
   &__heading {
-    margin: 2rem;
+    max-width: 1440px;
+    margin: 2rem auto;
   }
 
   &__cards {
