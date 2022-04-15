@@ -2,7 +2,7 @@
 
 &__text-container{
   max-width: 1440px;
-  margin: 2rem auto;
+  margin: auto;
   padding: 2rem;
 }
 
@@ -27,6 +27,18 @@
       &:focus {
         color: transparent;
       }
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .dashboard {
+    &__cards {
+      max-width: 100%;
+    }
+
+    &__text-container {
+      padding: 1rem 2rem 0;
     }
   }
 }

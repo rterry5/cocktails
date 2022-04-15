@@ -22,5 +22,19 @@
 }
 
 @media (max-width: 768px) {
+  .drink-details {
+    flex-direction: column;
+    padding-top: 3rem;
+    width: 100%;
+    padding: 3rem 0 0 0;
+    align-items: flex-end;
 
+    &__recipe {
+      padding: 0 2rem;
+    }
+
+    &__image {
+      margin: 0 auto;
+    }
+  }
 }

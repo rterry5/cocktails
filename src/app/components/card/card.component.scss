@@ -34,6 +34,15 @@
 
 @media (max-width: 768px) {
   .card {
-    
+    margin: .5rem;
+
+    &__name {
+      padding: 0   1rem;
+    }
+
+    &__img-container {
+      height: 170px;
+      width: 170px;
+    }
   }
 }
