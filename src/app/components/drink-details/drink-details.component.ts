@@ -20,4 +20,8 @@ export class DrinkDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  closeDialog() {
+    this.dialog.closeAll();
+}
+
 }

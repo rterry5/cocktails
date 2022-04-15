@@ -1,11 +1,26 @@
 .drink-details {
-  margin: 2rem auto;
+  margin: auto;
+  padding: 1.5rem;
   display: flex;
   max-width: 768px;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    cursor: pointer;
+  }
+
   &__image {
     max-width: 300px;
     margin-right: 3rem;
   }
+}
+
+@media (max-width: 768px) {
+
 }

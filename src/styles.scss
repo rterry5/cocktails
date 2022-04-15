@@ -20,3 +20,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-dialog-container {
   padding: 0 !important;
 }
+
+@media (max-width: 768px) {
+  .mat-dialog-container {
+    border-radius: 0 !important;
+  }
+
+  .cdk-overlay-pane {
+    height: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0 !important;
+  }
+}

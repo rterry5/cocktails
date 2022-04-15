@@ -1,28 +1,27 @@
-<div *ngIf="drinks">
-  <div mat-dialog-content class="drink-details">
-    <img src="{{drinks.strDrinkThumb}}" alt="" class="drink-details__image">
-    <div class="drink-details__recipe">
-      <h1 class="drink-details__text">{{drinks.strDrink}} ({{drinks.strAlcoholic}})</h1>
-      <p class="drink-details__text">{{drinks.strGlass}}</p>
-      <ul>
-        <li *ngIf="drinks.strIngredient1">{{drinks.strMeasure1}} {{drinks.strIngredient1}}</li>
-        <li *ngIf="drinks.strIngredient2">{{drinks.strMeasure2}} {{drinks.strIngredient2}}</li>
-        <li *ngIf="drinks.strIngredient3">{{drinks.strMeasure3}} {{drinks.strIngredient3}}</li>
-        <li *ngIf="drinks.strIngredient4">{{drinks.strMeasure4}} {{drinks.strIngredient4}}</li>
-        <li *ngIf="drinks.strIngredient5">{{drinks.strMeasure5}} {{drinks.strIngredient5}}</li>
-        <li *ngIf="drinks.strIngredient6">{{drinks.strMeasure6}} {{drinks.strIngredient6}}</li>
-        <li *ngIf="drinks.strIngredient7">{{drinks.strMeasure7}} {{drinks.strIngredient7}}</li>
-        <li *ngIf="drinks.strIngredient8">{{drinks.strMeasure8}} {{drinks.strIngredient8}}</li>
-        <li *ngIf="drinks.strIngredient9">{{drinks.strMeasure9}} {{drinks.strIngredient9}}</li>
-        <li *ngIf="drinks.strIngredient10">{{drinks.strMeasure10}} {{drinks.strIngredient10}}</li>
-        <li *ngIf="drinks.strIngredient11">{{drinks.strMeasure11}} {{drinks.strIngredient11}}</li>
-        <li *ngIf="drinks.strIngredient12">{{drinks.strMeasure12}} {{drinks.strIngredient12}}</li>
-        <li *ngIf="drinks.strIngredient13">{{drinks.strMeasure13}} {{drinks.strIngredient13}}</li>
-        <li *ngIf="drinks.strIngredient14">{{drinks.strMeasure14}} {{drinks.strIngredient14}}</li>
-        <li *ngIf="drinks.strIngredient15">{{drinks.strMeasure15}} {{drinks.strIngredient15}}</li>
-      </ul>
-      <p class="drink-details__text">{{drinks.strInstructions}}</p>
-    </div>
+<div mat-dialog-content class="drink-details" *ngIf="drinks">
+  <p class="drink-details__close" (click)="closeDialog()">X Close</p>
+  <img src="{{drinks.strDrinkThumb}}" alt="" class="drink-details__image">
+  <div class="drink-details__recipe">
+    <h1 class="drink-details__text">{{drinks.strDrink}} ({{drinks.strAlcoholic}})</h1>
+    <p class="drink-details__text">{{drinks.strGlass}}</p>
+    <ul>
+      <li *ngIf="drinks.strIngredient1">{{drinks.strMeasure1}} {{drinks.strIngredient1}}</li>
+      <li *ngIf="drinks.strIngredient2">{{drinks.strMeasure2}} {{drinks.strIngredient2}}</li>
+      <li *ngIf="drinks.strIngredient3">{{drinks.strMeasure3}} {{drinks.strIngredient3}}</li>
+      <li *ngIf="drinks.strIngredient4">{{drinks.strMeasure4}} {{drinks.strIngredient4}}</li>
+      <li *ngIf="drinks.strIngredient5">{{drinks.strMeasure5}} {{drinks.strIngredient5}}</li>
+      <li *ngIf="drinks.strIngredient6">{{drinks.strMeasure6}} {{drinks.strIngredient6}}</li>
+      <li *ngIf="drinks.strIngredient7">{{drinks.strMeasure7}} {{drinks.strIngredient7}}</li>
+      <li *ngIf="drinks.strIngredient8">{{drinks.strMeasure8}} {{drinks.strIngredient8}}</li>
+      <li *ngIf="drinks.strIngredient9">{{drinks.strMeasure9}} {{drinks.strIngredient9}}</li>
+      <li *ngIf="drinks.strIngredient10">{{drinks.strMeasure10}} {{drinks.strIngredient10}}</li>
+      <li *ngIf="drinks.strIngredient11">{{drinks.strMeasure11}} {{drinks.strIngredient11}}</li>
+      <li *ngIf="drinks.strIngredient12">{{drinks.strMeasure12}} {{drinks.strIngredient12}}</li>
+      <li *ngIf="drinks.strIngredient13">{{drinks.strMeasure13}} {{drinks.strIngredient13}}</li>
+      <li *ngIf="drinks.strIngredient14">{{drinks.strMeasure14}} {{drinks.strIngredient14}}</li>
+      <li *ngIf="drinks.strIngredient15">{{drinks.strMeasure15}} {{drinks.strIngredient15}}</li>
+    </ul>
+    <p class="drink-details__text">{{drinks.strInstructions}}</p>
   </div>
 </div>
 
