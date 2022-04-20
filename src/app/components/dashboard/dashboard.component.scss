@@ -1,10 +1,29 @@
 .dashboard {
+  &__text-container{
+    max-width: 1440px;
+    margin: auto;
+    padding: 2rem;
+  }
 
-&__text-container{
-  max-width: 1440px;
-  margin: auto;
-  padding: 2rem;
-}
+  &__form {
+    position: relative;
+  }
+
+  &__clear-search {
+    position: absolute;
+    border: none;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #ddd;
+    padding: 0;
+    outline: none;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: .1s;
+  }
 
   &__cards {
     display: flex;
@@ -12,7 +31,7 @@
     justify-content: center;
     max-width: 1440px;
     margin: auto;
-    padding-bottom: 5rem;
+    padding: 2rem 0 5rem 0;
   }
 
   &__input {

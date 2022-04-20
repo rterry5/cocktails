@@ -12,6 +12,7 @@ import { CardComponent } from './components/card/card.component';
 import { DrinkDetailsComponent } from './components/drink-details/drink-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+import { RandomDrinkComponent } from './components/random-drink/random-drink.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     DashboardComponent,
     NavComponent,
     CardComponent,
-    DrinkDetailsComponent
+    DrinkDetailsComponent,
+    RandomDrinkComponent
   ],
   imports: [
     BrowserModule,

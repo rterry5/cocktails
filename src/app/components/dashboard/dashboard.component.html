@@ -2,11 +2,12 @@
   <div class="dashboard__heading">
     <div class="dashboard__search">
       <form class="dashboard__form">
-        <input type="search" name="search" autocomplete="off" class="dashboard__input" placeholder="Search A Spirit" [(ngModel)]="searchQuery" (keyup)="getCocktails()">
+        <input type="search" name="search" autocomplete="off" class="dashboard__input" placeholder="Search by cocktail name..." [(ngModel)]="searchQuery" (keyup)="getCocktails()" (cancel)="clearSearch()">
+        <button class="dashboard__clear-search" (click)="clearSearch()">Clear Search</button>
       </form>
     </div>
-    <div class="dashboard__text-container">
-    </div>
   </div>
+  <app-random-drink class="dashboard__cards" [drinks]="cocktails" *ngIf="!hideRandom"></app-random-drink>
   <app-card [drinks]="cocktails" class="dashboard__cards"></app-card>
+  <p class="dashboard__no-results" *ngIf="showsNoResults">No results. Try searching again!</p>
 </div>

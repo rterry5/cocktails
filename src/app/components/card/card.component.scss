@@ -57,13 +57,21 @@
   .card {
     margin: .5rem;
 
-    // &__name {
-    //   padding: 0   1rem;
-    // }
-
     &__img-container {
       height: 170px;
       width: 170px;
+    }
+  }
+}
+
+:host-context(.random-drink) {
+  .card {
+    max-width: 250px;
+    height: auto;
+
+    &__img-container {
+      height: 250px;
+      width: 250px;
     }
   }
 }

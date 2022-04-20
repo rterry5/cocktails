@@ -13,6 +13,11 @@ export class CocktailService {
     return this.http.get<any>(cocktailUrl);
   }
 
+  getRandomCocktail() {
+    let cocktailUrl = `https://www.thecocktaildb.com/api/json/v1/1/random.php`
+    return this.http.get<any>(cocktailUrl);
+  }
+
   getCocktailsById(id: number) {
     let cocktailUrl = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`;
     return this.http.get<any>(cocktailUrl);
